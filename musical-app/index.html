@@ -1,12 +1,70 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
+<!--Doctype es una sentencia que indica que voy a trabajar con un
+documento de HTML-->
+
+<html lang="es"> <!--Aquí inicia mi página con la etiqueta de html-->
+<head><!-- Aquí en el head esta todo lo que no es visible en la pagina pero lo hace funcionar-->
+  <!--Con los metadatos puedo colocar caracteres especial, dar informacion al SED para pocisionamiento web-->
+  <meta charset="UTF-8"> <!--Permite caracteres especiales-->
+  <meta name="description" content="Musical Michael Jackson">
+  <meta name="author" content="Natalia Pedroza">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+<link rel="stylesheet" href="styles.css">
+
+
+
+
 <title>Musical Nat</title>
 </head>
 <body>
 
-<h1>Musical Nat</h1>
-<p>Escucha mis 3 canciones de POP</p>
+  <div class="container-musical">  
+    <img src="call-me-fred-X6kdEEqxbB4-unsplash (1).jpg" alt="Imagen de musical Michael Jackson" class="imagen-portada">
+    
+    
+    <h1>Musical Nat</h1>
+    <p class="pmusical">Escucha mis 3 canciones de Michael Jackson</p>
+
+    <div class="lista-canciones">
+        <!--CANCION 1-->
+        <div class="cancion1">
+            <p>💙 Beat It</p>
+             <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 1 -->
+                    <source src="Beat It.mp3" type="audio/mpeg">
+                </audio>
+        </div>
+
+        <div class="lista-canciones">
+        <!--CANCION 2-->
+        <div class="cancion1">
+            <p>💙 Remember the Time</p>
+             <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 1 -->
+                    <source src="Remember the Time.mp3" type="audio/mpeg">
+                </audio>
+        </div>
+
+
+        <div class="lista-canciones">
+        <!--CANCION 3-->
+        <div class="cancion1">
+            <p>💙 Smooth Criminal</p>
+             <audio controls class="audio-player">
+                    <!-- Mp3 de prueba 1 -->
+                    <source src="Smooth Criminal (2012 Remaster).mp3" type="audio/mpeg">
+                </audio>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
 
 </body>
 </html>
