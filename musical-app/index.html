@@ -27,44 +27,62 @@ documento de HTML-->
     <h1>Musical Nat</h1>
     <p class="pmusical">Escucha mis 3 canciones de Michael Jackson</p>
 
-    <div class="lista-canciones">
+    <!-- <div class="lista-canciones"> -->
+
+
         <!--CANCION 1-->
-        <div class="cancion1">
+        <!-- <div class="cancion1">
             <p>💙 Beat It</p>
-             <audio controls class="audio-player">
+             <audio controls class="audio-player"> -->
                     <!-- Mp3 de prueba 1 -->
-                    <source src="Beat It.mp3" type="audio/mpeg">
+                   <!--  <source src="Beat It.mp3" type="audio/mpeg">
                 </audio>
         </div>
 
-        <div class="lista-canciones">
+        <div class="lista-canciones"> -->
         <!--CANCION 2-->
-        <div class="cancion1">
+       <!--  <div class="cancion1">
             <p>💙 Remember the Time</p>
-             <audio controls class="audio-player">
+             <audio controls class="audio-player"> -->
                     <!-- Mp3 de prueba 1 -->
-                    <source src="Remember the Time.mp3" type="audio/mpeg">
+                    <!-- <source src="RemembertheTime.mp3" type="audio/mpeg">
                 </audio>
         </div>
 
 
-        <div class="lista-canciones">
+        <div class="lista-canciones"> -->
         <!--CANCION 3-->
-        <div class="cancion1">
+        <!-- <div class="cancion1">
             <p>💙 Smooth Criminal</p>
-             <audio controls class="audio-player">
+             <audio controls class="audio-player"> -->
                     <!-- Mp3 de prueba 1 -->
-                    <source src="Smooth Criminal (2012 Remaster).mp3" type="audio/mpeg">
+                    <!-- <source src="SmoothCriminal(2012Remaster).mp3" type="audio/mpeg">
                 </audio>
         </div>
 
 
-    </div>
+    </div> -->
+<!-- UNA SOLA CAJA DE REPRODUCTOR -->
+      <div class="canciones">
+        <!-- 1. Le ponemos id="nombre-cancion" para que JS cambie el texto -->
+        <p id="nombre-cancion">💙Beat It</p>
+        
+        <!--  Un solo audio con id="audio-player" -->
+        <audio id="audio-player" controls class="audio-player">
+          <source src="BeatIt.mp3" type="audio/mpeg">
+        </audio>
 
+
+        <!-- Agregamos los botones para avanzar y retroceder -->
+        <div class="controles">
+          <button id="btn-anterior">⏮ Anterior</button>
+          <button id="btn-siguiente">Siguiente ⏭</button>
+        </div>
+      </div>
 
 </div>
 
 
-
+<script src="script.js"></script>
 </body>
 </html>
